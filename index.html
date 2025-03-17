@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to WTF-Profile</title>
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90' font-family='Arial, sans-serif'>👤</text></svg>" type="image/svg+xml">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Loading Overlay for Page Transitions -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Loading, please wait...</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-user-circle me-2"></i>
+                <span class="brand-text">WTF-Profile</span>
+                <span class="brand-dot"></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link highlight-btn" href="signup.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6 hero-text" data-aos="fade-right" data-aos-duration="1000">
+                    <span class="badge bg-light text-primary mb-3">Welcome to the Future</span>
+                    <h1 class="display-4 fw-bold text-highlight">Elevate Your Experience</h1>
+                    <p class="lead">Discover amazing features and possibilities with our innovative solution designed to transform the way you work.</p>
+                    <div class="mt-4 hero-buttons">
+                        <a href="signup.html" class="btn btn-primary btn-lg me-3 btn-hover-effect">Get Started</a>
+                        <a href="#features" class="btn btn-outline-light btn-lg btn-hover-effect">Learn More</a>
+                    </div>
+                    <div class="hero-stats mt-5">
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <div class="stat-box" data-aos="fade-up" data-aos-delay="100">
+                                    <h3 class="stat-number counting" data-count="5000">0</h3>
+                                    <p class="stat-label">Users</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-box" data-aos="fade-up" data-aos-delay="200">
+                                    <h3 class="stat-number counting" data-count="150">0</h3>
+                                    <p class="stat-label">Countries</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-box" data-aos="fade-up" data-aos-delay="300">
+                                    <h3 class="stat-number counting" data-count="99">0</h3>
+                                    <p class="stat-label">Satisfaction</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="hero-image-container">
+                        <img src="https://via.placeholder.com/600x500" alt="Hero Image" class="img-fluid hero-image">
+                        <div class="floating-card card1">
+                            <i class="fas fa-check-circle text-success me-2"></i> Secure & Reliable
+                        </div>
+                        <div class="floating-card card2">
+                            <i class="fas fa-bolt text-warning me-2"></i> Fast Performance
+                        </div>
+                        <div class="floating-card card3">
+                            <i class="fas fa-star text-primary me-2"></i> Top Rated
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,208C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-md-8 mx-auto" data-aos="fade-up">
+                    <span class="badge bg-primary mb-2">Our Features</span>
+                    <h2 class="section-title">Why Choose Our Platform</h2>
+                    <p class="section-subtitle">We offer a comprehensive set of tools designed to elevate your experience and streamline your workflow.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card text-center">
+                        <div class="icon-container mb-4">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Fast & Reliable</h3>
+                        <p>Experience lightning-fast performance with our optimized platform designed for speed and reliability.</p>
+                        <a href="#" class="btn btn-link feature-link">Learn more <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card text-center">
+                        <div class="icon-container mb-4">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Secure</h3>
+                        <p>Your data is protected with enterprise-grade security measures and regular security audits.</p>
+                        <a href="#" class="btn btn-link feature-link">Learn more <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card text-center">
+                        <div class="icon-container mb-4">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>User Friendly</h3>
+                        <p>Intuitive interface designed for the best user experience with minimum learning curve.</p>
+                        <a href="#" class="btn btn-link feature-link">Learn more <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-md-8 mx-auto" data-aos="fade-up">
+                    <span class="badge bg-primary mb-2">Testimonials</span>
+                    <h2 class="section-title">What Our Users Say</h2>
+                    <p class="section-subtitle">Discover why thousands of users trust our platform for their daily needs.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"This platform has completely transformed our workflow. The user interface is intuitive and the features are exactly what we needed."</p>
+                        <div class="testimonial-user">
+                            <img src="https://via.placeholder.com/50" alt="User" class="rounded-circle me-3">
+                            <div>
+                                <h5 class="mb-0">Sarah Johnson</h5>
+                                <p class="mb-0 text-muted">Marketing Director</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The security features are impressive. We feel confident that our data is protected, and the customer support team is always responsive."</p>
+                        <div class="testimonial-user">
+                            <img src="https://via.placeholder.com/50" alt="User" class="rounded-circle me-3">
+                            <div>
+                                <h5 class="mb-0">Michael Chen</h5>
+                                <p class="mb-0 text-muted">IT Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"The platform offers incredible value for money. We've seen a significant increase in productivity since we started using it."</p>
+                        <div class="testimonial-user">
+                            <img src="https://via.placeholder.com/50" alt="User" class="rounded-circle me-3">
+                            <div>
+                                <h5 class="mb-0">Jennifer Lopez</h5>
+                                <p class="mb-0 text-muted">Small Business Owner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center" data-aos="zoom-in">
+                    <h2 class="mb-4">Ready to Get Started?</h2>
+                    <p class="mb-4">Join thousands of satisfied users and experience the difference today.</p>
+                    <a href="signup.html" class="btn btn-primary btn-lg btn-hover-effect">Sign Up Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3"><i class="fas fa-user-circle me-2"></i> WTF-Profile</h5>
+                    <p>We're dedicated to providing the best user experience and top-notch security for all our users.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="mb-3">Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Home</a></li>
+                        <li><a href="#features" class="footer-link">Features</a></li>
+                        <li><a href="#testimonials" class="footer-link">Testimonials</a></li>
+                        <li><a href="#" class="footer-link">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="mb-3">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">Contact Us</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates and tips.</p>
+                    <form class="mt-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2023 WTF-Profile. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html> 
